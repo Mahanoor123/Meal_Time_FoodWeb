@@ -66,7 +66,7 @@ if (pageTitle === "Homepage") {
     {
       image: "./Assets/Images/food2.jpg",
       title: "Beef steak with seasoning",
-      price: "PKR 1,436.00",
+      price: "PKR 1436.00",
     },
     {
       image: "./Assets/Images/food3.jpg",
@@ -86,7 +86,7 @@ if (pageTitle === "Homepage") {
     {
       image: "./Assets/Images/food6.jpg",
       title: "weggies with steak",
-      price: "PKR 1,250.00",
+      price: "PKR 1250.00",
     },
     {
       image: "./Assets/Images/food7.jpg",
@@ -101,7 +101,7 @@ if (pageTitle === "Homepage") {
     {
       image: "./Assets/Images/food9.jpg",
       title: "Large beef steak",
-      price: "PKR 1,650.00",
+      price: "PKR 1650.00",
     },
     {
       image: "./Assets/Images/food10.jpg",
@@ -121,7 +121,7 @@ if (pageTitle === "Homepage") {
     {
       image: "./Assets/Images/food13.jpg",
       title: "Achaari sabzi with roti",
-      price: "PKR 980.00",
+      price: "PKR 750.00",
     },
     {
       image: "./Assets/Images/food14.jpg",
