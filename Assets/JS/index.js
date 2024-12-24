@@ -218,7 +218,7 @@ if (pageTitle === "Homepage") {
   });
 
   cartclose.addEventListener("click", function () {
-    document.querySelector(".cart_section").style.right = "-50vw";
+    document.querySelector(".cart_section").style.right = "-90%";
   });
 
   var counter = 0;
@@ -280,7 +280,7 @@ if (pageTitle === "Homepage") {
         foodItem = foodItems[i];
         break;
       }
-    } 
+    }
 
     if (foodItem) {
       total -= parseFloat(foodItem.price.replace("PKR", "").trim());
@@ -292,9 +292,10 @@ if (pageTitle === "Homepage") {
     cartMenu.removeChild(cartItem);
   }
 
-  function checkout(){
+  function checkout() {
     cartMenu.innerHTML = "";
     previewContainer.style.display = "none";
+    document.querySelector(".cart_section").style.right = "-90%";
     alert("Your order complete, Thanks for purchasing");
   }
 
@@ -314,7 +315,6 @@ if (pageTitle === "Homepage") {
     mainImage.src = smallImages[3].src;
   };
 } else if (pageTitle === "Dealpage") {
-
   var deals = [
     {
       image: "./Assets/Images/deal1.jpg",
@@ -518,7 +518,8 @@ if (pageTitle === "Homepage") {
 
     document.querySelector(".deals_display").appendChild(deal);
   }
-  function checkout(){
-    alert("Your purchase complete, Thanks for purchasing")
+  function checkout() {
+    alert("Your purchase complete, Thanks for purchasing");
   }
+} else if (pageTitle === "Loginpage") {
 }

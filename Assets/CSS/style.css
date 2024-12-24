@@ -386,53 +386,56 @@ main {
 
 /******************** Category Section ********************/
 
-.category_display{
+.category_display {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem ;
+  gap: 1rem;
 }
-.category_display .category{
+.category_display .category {
   position: relative;
   transition: transform 0.4s linear;
 
-  &:hover{
+  &:hover {
     border: 1px solid #a6161c;
     transform: translateY(-0.5rem);
   }
 }
-.category_display .category_content{
+.category_display .category_content {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
-.category_display .category_content .cat_img{
+.category_display .category_content .cat_img {
   width: 8rem;
   height: 8rem;
 }
-.category_display .category_content .cat_img img{
+.category_display .category_content .cat_img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
-.category_display .category_content .cat_content small{
+.category_display .category_content .cat_content small {
   color: #d75f28;
   font-weight: 600;
 }
-.category_display .category_content .cat_content h4{
+.category_display .category_content .cat_content h4 {
   color: #f4f4f4;
   font-size: 2rem;
   line-height: 2rem;
 }
-.category_display .category_content .cat_content p{
+.category_display .category_content .cat_content p {
   color: #f6f6f6;
   margin: 0.5rem 0;
   font-size: 0.8rem;
 }
-.category_display .category_content .cat_content button{
+.category_display .category_content .cat_content button {
   all: unset;
   padding: 0.3rem 2rem;
   background-color: #a6161c;
@@ -441,17 +444,19 @@ main {
   cursor: pointer;
   transition: background-color 0.4s linear;
 
-  &:hover{
+  &:hover {
     background-color: #d75f28;
   }
 }
-.category_display .category_image img{
+.category_display .category_image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.team_display{
+/******************** Team Section ********************/
+
+.team_display {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 3rem;
@@ -463,40 +468,40 @@ main {
   border-radius: 2rem;
   transition: all 0.6s linear;
 
-  &:hover{
+  &:hover {
     border: 1px solid #a6161c;
   }
 
-  &:hover .team_image img{
+  &:hover .team_image img {
     transform: scale(1.1);
   }
 }
-.team_display .team_image{
+.team_display .team_image {
   width: 8rem;
   height: 8rem;
   justify-self: center;
 }
-.team_display .team_image img{
+.team_display .team_image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
   border: 0.2rem solid #d75f28;
 }
-.team_display .team_content{
+.team_display .team_content {
   justify-self: center;
   text-align: center;
 }
-.team_display .team_content h4{
+.team_display .team_content h4 {
   color: #a6161c;
   margin: 0.5rem 0;
 }
-.team_display .team_content p{
+.team_display .team_content p {
   color: #1c1c1cdc;
   font-size: 0.8rem;
   margin: 0.5rem 0;
 }
-.team_display .team_content i{
+.team_display .team_content i {
   color: #d75f28;
   margin: 0 0.5rem;
 }
@@ -854,6 +859,9 @@ footer .sub_footer {
     background-color: #a6161c;
   }
 }
+
+/******************** Features Section ********************/
+
 .features_display {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -866,7 +874,7 @@ footer .sub_footer {
   padding: 2rem;
   transition: transform 0.4s linear;
 
-  &:hover{
+  &:hover {
     transform: translateY(-0.5rem);
   }
 }
@@ -1020,7 +1028,7 @@ footer .sub_footer {
   cursor: pointer;
   transition: background-color 0.4s linear;
 
-  &:hover{
+  &:hover {
     background-color: #a6161c;
   }
 }
@@ -1029,16 +1037,19 @@ footer .sub_footer {
 
 .newsletter_display {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 0 4rem;
   gap: 2rem;
   justify-content: center;
   align-items: center;
-  background-color: #d75f28;
-  padding: 2rem 6rem;
+  border: 1px solid #d75f28;
+  background-color: #f6f6f6;
+  padding: 1rem 6rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .newsletter_display .newsletter_image {
-  width: 20rem;
-  height: 25rem;
+  width: 14rem;
+  height: 20rem;
 }
 .newsletter_display .newsletter_image img {
   width: 100%;
@@ -1054,21 +1065,21 @@ footer .sub_footer {
   all: unset;
   width: 80%;
   padding: 0.5rem 0 0.5rem 0.5rem;
-  color: #f6f6f6f6;
+  color: #d75f28;
   margin: 1rem;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #d75f28;
 }
 .newsletter_display .newletter_content input::placeholder {
-  color: #f4f4f4;
+  color: #1d1d1d9a;
 }
 .newsletter_display .newletter_content button {
   all: unset;
   width: 80%;
   margin: 1rem;
-  background-color: #f4f4f4;
+  background-color: #d75f28;
   padding: 0.5rem 0;
   text-align: center;
-  color: #d75f28;
+  color: #fff;
   cursor: pointer;
   transition: background-color 0.4s linear;
 
@@ -1119,15 +1130,17 @@ footer .sub_footer {
 .application_display {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0 4rem;
   justify-content: center;
   align-items: center;
-  background-color: #d75f28;
-  gap: 2rem;
-  padding: 2rem 6rem;
+  border: 1px solid #d75f28;
+  background-color: #f6f6f6;
+  padding: 1rem 6rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .application_display .application_image {
-  width: 20rem;
-  height: 25rem;
+  width: 14rem;
+  height: 20rem;
 }
 .application_display .application_image img {
   width: 100%;
@@ -1141,11 +1154,11 @@ footer .sub_footer {
 }
 .application_display .application_content i {
   font-size: 2.5rem;
-  color: #f4f4f4;
+  color: #d75f28;
   margin: 1rem;
 }
 .application_display .application_content p {
-  color: #f6f6f6f6;
+  color: #1d1d1dc3;
   font-size: 0.8rem;
   font-weight: 400;
   margin: 1rem;
@@ -1153,10 +1166,10 @@ footer .sub_footer {
 .application_display .application_content button {
   all: unset;
   margin: 1rem;
-  background-color: #f4f4f4;
+  background-color: #d75f28;
   padding: 0.5rem 2rem;
   text-align: center;
-  color: #d75f28;
+  color: #fff;
   cursor: pointer;
   transition: background-color 0.4s linear;
 
@@ -1211,6 +1224,10 @@ form .login_btn {
   &:hover {
     background-color: #a6161c;
   }
+}
+form .login_btn a {
+  text-decoration: none;
+  color: #fff;
 }
 .links {
   text-align: center;
@@ -1294,6 +1311,10 @@ form .login_btn {
     height: 80vh;
     padding: 0 2rem;
   }
+  .cart_section {
+    right: -90vw;
+    width: 60vw;
+  }
 }
 
 @media (max-width: 850px) {
@@ -1334,13 +1355,23 @@ form .login_btn {
     height: 2rem;
     width: 2rem;
   }
-  .about_display{
+  .about_display {
     gap: 1rem 0;
   }
   .about_display .about_image {
     height: 45vh;
     width: 80vw;
   }
+  .newsletter_display {
+    margin: 0;
+  }
+  .newsletter_display .newsletter_image {
+    width: 9rem;
+    height: 12rem;
+  }
+  .gallery__item figcaption {
+    font-size: 0.5rem;
+    padding: 0 1rem;
 }
 
 @media (max-width: 500px) {
@@ -1373,14 +1404,14 @@ form .login_btn {
   }
   .newsletter_display {
     gap: 1rem;
+    margin: 0;
     padding: 1rem;
     max-width: 100%;
   }
   .newsletter_display .newsletter_image {
-    width: 12rem;
-    height: 17rem;
+    width: 9rem;
+    height: 12rem;
     justify-self: center;
-    align-self: center;
   }
   .newsletter_display .newletter_content {
     justify-self: center;
@@ -1403,6 +1434,7 @@ form .login_btn {
   .application_display {
     gap: 1rem;
     padding: 1rem 2rem;
+    margin: 0;
   }
   .application_display .application_image {
     width: 12rem;
@@ -1410,7 +1442,7 @@ form .login_btn {
     justify-self: center;
     align-self: center;
   }
-  .application_display .application_content{
+  .application_display .application_content {
     justify-self: center;
   }
   .application_display .application_content p {
@@ -1424,7 +1456,26 @@ form .login_btn {
     margin: 0.5rem;
     padding: 0.5rem 2rem;
     font-size: 0.8rem;
-}
+  }
+  .cart_section {
+    width: 90vw;
+  }
+  .cart_section .cart_menu .cart_item .item_image {
+    width: 2rem;
+    height: 2rem;
+  }
+  .cart_menu .cart_item .item_desc h4 {
+    font-size: 0.7rem;
+  }
+  .cart_menu .cart_item .item_desc p {
+    display: none;
+  }
+  .cart_menu .cart_item .item_price {
+    font-size: 0.7rem;
+  }
+  .cart_menu .cart_item .item_quantity input {
+    width: 0.5rem;
+  }
 }
 
 @media (max-width: 440px) {
@@ -1447,5 +1498,10 @@ form .login_btn {
   }
   .login {
     width: 80vw;
+  }
+  .menu_slider .slide_img img {
+    width: 10rem;
+    height: 10rem;
+    border: 0.5rem solid #1c1c1cdc;
   }
 }
